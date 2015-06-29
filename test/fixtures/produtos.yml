@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  codigo: MyString
+  imei: MyString
+  descricao: MyString
+  unidade: MyString
+  obs: MyText
+  preco: 1.5
+  codbarras: MyString
+  franciona: false
+  ctrl_preco: 1
+  ctrl_estoque: 1
+  quantidade: 1.5
+  max_desc: 1.5
+  max_acresc: 1.5
+
+two:
+  codigo: MyString
+  imei: MyString
+  descricao: MyString
+  unidade: MyString
+  obs: MyText
+  preco: 1.5
+  codbarras: MyString
+  franciona: false
+  ctrl_preco: 1
+  ctrl_estoque: 1
+  quantidade: 1.5
+  max_desc: 1.5
+  max_acresc: 1.5

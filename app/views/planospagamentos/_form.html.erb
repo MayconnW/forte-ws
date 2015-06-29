@@ -1,0 +1,45 @@
+<%= form_for(@planospagamento) do |f| %>
+  <% if @planospagamento.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@planospagamento.errors.count, "error") %> prohibited this planospagamento from being saved:</h2>
+
+      <ul>
+      <% @planospagamento.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :descricao %><br>
+    <%= f.text_field :descricao %>
+  </div>
+  <div class="field">
+    <%= f.label :parcelas %><br>
+    <%= f.number_field :parcelas %>
+  </div>
+  <div class="field">
+    <%= f.label :periodo %><br>
+    <%= f.number_field :periodo %>
+  </div>
+  <div class="field">
+    <%= f.label :desconto %><br>
+    <%= f.text_field :desconto %>
+  </div>
+  <div class="field">
+    <%= f.label :acrescimo %><br>
+    <%= f.text_field :acrescimo %>
+  </div>
+  <div class="field">
+    <%= f.label :entrada %><br>
+    <%= f.check_box :entrada %>
+  </div>
+  <div class="field">
+    <%= f.label :vencimento_fixo %><br>
+    <%= f.check_box :vencimento_fixo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

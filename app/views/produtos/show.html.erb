@@ -1,0 +1,69 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Codigo:</strong>
+  <%= @produto.codigo %>
+</p>
+
+<p>
+  <strong>Imei:</strong>
+  <%= @produto.imei %>
+</p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @produto.descricao %>
+</p>
+
+<p>
+  <strong>Unidade:</strong>
+  <%= @produto.unidade %>
+</p>
+
+<p>
+  <strong>Obs:</strong>
+  <%= @produto.obs %>
+</p>
+
+<p>
+  <strong>Preco:</strong>
+  <%= @produto.preco %>
+</p>
+
+<p>
+  <strong>Codbarras:</strong>
+  <%= @produto.codbarras %>
+</p>
+
+<p>
+  <strong>Franciona:</strong>
+  <%= @produto.fraciona %>
+</p>
+
+<p>
+  <strong>Ctrl preco:</strong>
+  <%= @produto.ctrl_preco %>
+</p>
+
+<p>
+  <strong>Ctrl estoque:</strong>
+  <%= @produto.ctrl_estoque %>
+</p>
+
+<p>
+  <strong>Quantidade:</strong>
+  <%= @produto.quantidade %>
+</p>
+
+<p>
+  <strong>Max desc:</strong>
+  <%= @produto.max_desc %>
+</p>
+
+<p>
+  <strong>Max acresc:</strong>
+  <%= @produto.max_acresc %>
+</p>
+
+<%= link_to 'Edit', edit_produto_path(@produto) %> |
+<%= link_to 'Back', produtos_path %>

@@ -1,0 +1,133 @@
+<%= form_for(@cliente) do |f| %>
+  <% if @cliente.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
+
+      <ul>
+      <% @cliente.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tipo_pessoa %><br>
+    <%= f.text_field :tipo_pessoa %>
+  </div>
+  <div class="field">
+    <%= f.label :endereco %><br>
+    <%= f.text_field :endereco %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br>
+    <%= f.text_field :numero %>
+  </div>
+  <div class="field">
+    <%= f.label :bairro %><br>
+    <%= f.text_field :bairro %>
+  </div>
+  <div class="field">
+    <%= f.label :cidade %><br>
+    <%= f.text_field :cidade %>
+  </div>
+  <div class="field">
+    <%= f.label :estado %><br>
+    <%= f.text_field :estado %>
+  </div>
+  <div class="field">
+    <%= f.label :cep %><br>
+    <%= f.text_field :cep %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br>
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :ddd_fone %><br>
+    <%= f.text_field :ddd_fone %>
+  </div>
+  <div class="field">
+    <%= f.label :fone %><br>
+    <%= f.text_field :fone %>
+  </div>
+  <div class="field">
+    <%= f.label :ddd_celular %><br>
+    <%= f.text_field :ddd_celular %>
+  </div>
+  <div class="field">
+    <%= f.label :celular %><br>
+    <%= f.text_field :celular %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br>
+    <%= f.number_field :status %>
+  </div>
+  <div class="field">
+    <%= f.label :data_nascimento %><br>
+    <%= f.datetime_select :data_nascimento %>
+  </div>
+  <div class="field">
+    <%= f.label :referc1 %><br>
+    <%= f.text_field :referc1 %>
+  </div>
+  <div class="field">
+    <%= f.label :ddd_referc1 %><br>
+    <%= f.text_field :ddd_referc1 %>
+  </div>
+  <div class="field">
+    <%= f.label :fone_referc1 %><br>
+    <%= f.text_field :fone_referc1 %>
+  </div>
+  <div class="field">
+    <%= f.label :nome_razao %><br>
+    <%= f.text_field :nome_razao %>
+  </div>
+  <div class="field">
+    <%= f.label :fantasia %><br>
+    <%= f.text_field :fantasia %>
+  </div>
+  <div class="field">
+    <%= f.label :cpf_cnpj %><br>
+    <%= f.text_field :cpf_cnpj %>
+  </div>
+  <div class="field">
+    <%= f.label :rg_ie %><br>
+    <%= f.text_field :rg_ie %>
+  </div>
+  <div class="field">
+    <%= f.label :alterado %><br>
+    <%= f.check_box :alterado %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_uf %><br>
+    <%= f.text_field :cod_uf %>
+  </div>
+  <div class="field">
+    <%= f.label :cod_mun %><br>
+    <%= f.text_field :cod_mun %>
+  </div>
+  <div class="field">
+    <%= f.label :liberado %><br>
+    <%= f.number_field :liberado %>
+  </div>
+  <div class="field">
+    <%= f.label :limite_credito %><br>
+    <%= f.text_field :limite_credito %>
+  </div>
+  <div class="field">
+    <%= f.label :limite_dias %><br>
+    <%= f.number_field :limite_dias %>
+  </div>
+  <div class="field">
+    <%= f.label :bloqueios %><br>
+    <%= f.text_area :bloqueios %>
+  </div>
+  <div class="field">
+    <%= f.label :planospagamento_id %><br>
+    <%= f.text_field :planospagamento_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

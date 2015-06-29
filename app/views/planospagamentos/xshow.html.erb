@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descricao:</strong>
+  <%= @planospagamento.descricao %>
+</p>
+
+<p>
+  <strong>Parcelas:</strong>
+  <%= @planospagamento.parcelas %>
+</p>
+
+<p>
+  <strong>Periodo:</strong>
+  <%= @planospagamento.periodo %>
+</p>
+
+<p>
+  <strong>Desconto:</strong>
+  <%= @planospagamento.desconto %>
+</p>
+
+<p>
+  <strong>Acrescimo:</strong>
+  <%= @planospagamento.acrescimo %>
+</p>
+
+<p>
+  <strong>Entrada:</strong>
+  <%= @planospagamento.entrada %>
+</p>
+
+<p>
+  <strong>Vencimento fixo:</strong>
+  <%= @planospagamento.vencimento_fixo %>
+</p>
+
+<%= link_to 'Edit', edit_planospagamento_path(@planospagamento) %> |
+<%= link_to 'Back', planospagamentos_path %>

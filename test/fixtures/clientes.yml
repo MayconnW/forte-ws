@@ -1,0 +1,63 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo_pessoa: MyString
+  endereco: MyString
+  numero: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
+  cep: MyString
+  email: MyString
+  ddd_fone: MyString
+  fone: MyString
+  ddd_celular: MyString
+  celular: MyString
+  status: 1
+  data_nascimento: 2015-06-15 18:02:53
+  referc1: MyString
+  ddd_referc1: MyString
+  fone_referc1: MyString
+  nome_razao: MyString
+  fantasia: MyString
+  cpf_cnpj: MyString
+  rg_ie: MyString
+  alterado: false
+  cod_uf: MyString
+  cod_mun: MyString
+  liberado: 1
+  limite_credito: 1.5
+  limite_dias: 1
+  bloqueios: MyText
+  planospagamento_id: 
+
+two:
+  tipo_pessoa: MyString
+  endereco: MyString
+  numero: MyString
+  bairro: MyString
+  cidade: MyString
+  estado: MyString
+  cep: MyString
+  email: MyString
+  ddd_fone: MyString
+  fone: MyString
+  ddd_celular: MyString
+  celular: MyString
+  status: 1
+  data_nascimento: 2015-06-15 18:02:53
+  referc1: MyString
+  ddd_referc1: MyString
+  fone_referc1: MyString
+  nome_razao: MyString
+  fantasia: MyString
+  cpf_cnpj: MyString
+  rg_ie: MyString
+  alterado: false
+  cod_uf: MyString
+  cod_mun: MyString
+  liberado: 1
+  limite_credito: 1.5
+  limite_dias: 1
+  bloqueios: MyText
+  planospagamento_id: 

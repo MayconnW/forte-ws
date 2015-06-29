@@ -1,0 +1,83 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Clientes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tipo pessoa</th>
+      <th>Endereco</th>
+      <th>Numero</th>
+      <th>Bairro</th>
+      <th>Cidade</th>
+      <th>Estado</th>
+      <th>Cep</th>
+      <th>Email</th>
+      <th>Ddd fone</th>
+      <th>Fone</th>
+      <th>Ddd celular</th>
+      <th>Celular</th>
+      <th>Status</th>
+      <th>Data nascimento</th>
+      <th>Referc1</th>
+      <th>Ddd referc1</th>
+      <th>Fone referc1</th>
+      <th>Nome razao</th>
+      <th>Fantasia</th>
+      <th>Cpf cnpj</th>
+      <th>Rg ie</th>
+      <th>Alterado</th>
+      <th>Cod uf</th>
+      <th>Cod mun</th>
+      <th>Liberado</th>
+      <th>Limite credito</th>
+      <th>Limite dias</th>
+      <th>Bloqueios</th>
+      <th>Planospagamento</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @clientes.each do |cliente| %>
+      <tr>
+        <td><%= cliente.tipo_pessoa %></td>
+        <td><%= cliente.endereco %></td>
+        <td><%= cliente.numero %></td>
+        <td><%= cliente.bairro %></td>
+        <td><%= cliente.cidade %></td>
+        <td><%= cliente.estado %></td>
+        <td><%= cliente.cep %></td>
+        <td><%= cliente.email %></td>
+        <td><%= cliente.ddd_fone %></td>
+        <td><%= cliente.fone %></td>
+        <td><%= cliente.ddd_celular %></td>
+        <td><%= cliente.celular %></td>
+        <td><%= cliente.status %></td>
+        <td><%= cliente.data_nascimento %></td>
+        <td><%= cliente.referc1 %></td>
+        <td><%= cliente.ddd_referc1 %></td>
+        <td><%= cliente.fone_referc1 %></td>
+        <td><%= cliente.nome_razao %></td>
+        <td><%= cliente.fantasia %></td>
+        <td><%= cliente.cpf_cnpj %></td>
+        <td><%= cliente.rg_ie %></td>
+        <td><%= cliente.alterado %></td>
+        <td><%= cliente.cod_uf %></td>
+        <td><%= cliente.cod_mun %></td>
+        <td><%= cliente.liberado %></td>
+        <td><%= cliente.limite_credito %></td>
+        <td><%= cliente.limite_dias %></td>
+        <td><%= cliente.bloqueios %></td>
+        <td><%= cliente.planospagamento %></td>
+        <td><%= link_to 'Show', cliente %></td>
+        <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
+        <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cliente', new_cliente_path %>

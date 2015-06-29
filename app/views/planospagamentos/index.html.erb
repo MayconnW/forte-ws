@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Planospagamentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descricao</th>
+      <th>Parcelas</th>
+      <th>Periodo</th>
+      <th>Desconto</th>
+      <th>Acrescimo</th>
+      <th>Entrada</th>
+      <th>Vencimento fixo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planospagamentos.each do |planospagamento| %>
+      <tr>
+        <td><%= planospagamento.descricao %></td>
+        <td><%= planospagamento.parcelas %></td>
+        <td><%= planospagamento.periodo %></td>
+        <td><%= planospagamento.desconto %></td>
+        <td><%= planospagamento.acrescimo %></td>
+        <td><%= planospagamento.entrada %></td>
+        <td><%= planospagamento.vencimento_fixo %></td>
+        <td><%= link_to 'Show', planospagamento %></td>
+        <td><%= link_to 'Edit', edit_planospagamento_path(planospagamento) %></td>
+        <td><%= link_to 'Destroy', planospagamento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Planospagamento', new_planospagamento_path %>
