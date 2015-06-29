@@ -32,6 +32,15 @@ development:
   pool: 5
   timeout: 5000
 
+production:
+  adapter: postgresql
+  database: fortews_production
+  host: localhost
+  username: postgres
+  password: 123
+  pool: 5
+  timeout: 5000
+  
 test:
   adapter: postgresql
   database: fortews_test
