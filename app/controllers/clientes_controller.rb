@@ -2,9 +2,11 @@ class ClientesController < ApplicationController
   include ApplicationHelper
   
   before_action :set_cliente, only: [:show, :edit, :update, :destroy]
+  
+  #respond_to :html, :json
 
   def index
-    @clientes = Cliente.all
+    @clientes = Cliente.where('id < 100')
     respond_to do |format|
       format.html
       format.json
@@ -32,6 +34,9 @@ class ClientesController < ApplicationController
   # GET /clientes/new
   def new
     @cliente = Cliente.new
+    
+    
+    
   end
 
   # GET /clientes/1/edit
@@ -53,7 +58,20 @@ class ClientesController < ApplicationController
       end
     end
   end
+  
+  def persist
+    @clientes.each do |clienteX|
+      @cliente = clienteX
+      @cliente = Cliente.new(cliente_params)
+      if @cliente.save
+        render :show, status: :created, location: @cliente 
+      else
+        render json: @cliente.errors, status: :unprocessable_entity 
+      end
+    end
+  end
 
+  
   # PATCH/PUT /clientes/1
   # PATCH/PUT /clientes/1.json
   def update
