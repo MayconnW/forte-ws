@@ -27,16 +27,16 @@ development:
   adapter: postgresql
   database: fortews_development
   host: localhost
-  username: postgres
+  username: mayconn
   password: 123 
   pool: 5
-  timeout: 5000
+  timeout: 5000 
 
 production:
   adapter: postgresql
   database: fortews_production
   host: localhost
-  username: postgres
+  username: mayconn
   password: 123
   pool: 5
   timeout: 5000
@@ -45,7 +45,7 @@ test:
   adapter: postgresql
   database: fortews_test
   host: localhost
-  username: postgres
+  username: mayconn
   password: 123
   pool: 5
   timeout: 5000
